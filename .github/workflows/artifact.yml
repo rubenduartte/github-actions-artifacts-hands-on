@@ -21,7 +21,7 @@ jobs:
   
   download:
     runs-on: ubuntu-latest
-    need: build
+    needs: build
     steps:
 
     - name: Download artifact
