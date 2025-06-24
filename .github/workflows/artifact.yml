@@ -24,7 +24,7 @@ jobs:
     needs: build
     steps:
 
-    - name: Download artifact
+    - name: Download text file
       uses: actions/download-artifact@v4
       with:
         name: hello-artifact
@@ -33,5 +33,5 @@ jobs:
     - name: Display structure of downloaded files
       run: ls -R
 
-    - name: show hello
+    - name: Display content of the text file
       run: cat ./artifacts/hello.txt 
